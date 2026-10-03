@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICEMAN BOT 👑 — Pairing</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="card">
+    <div class="brand">ICEMAN BOT <span>👑</span></div>
+    <h1>WhatsApp Pairing</h1>
+    <p class="muted">Enter your WhatsApp number in international format. The code below is requested from WhatsApp by the server.</p>
+    <label for="number">WhatsApp number</label>
+    <input id="number" type="tel" inputmode="tel" autocomplete="tel" placeholder="233545274761">
+    <small>Use country code, digits only. Example: Ghana +233 → 233545274761.</small>
+    <button id="pair">Get real pairing code</button>
+    <div id="status" class="status">Ready.</div>
+    <div id="codeBox" class="codebox hidden">
+      <div>PAIRING CODE</div>
+      <strong id="code">------</strong>
+      <button id="copy">Copy code</button>
+    </div>
+    <div id="success" class="success hidden">✅ ICEMAN BOT synced successfully!</div>
+    <p class="muted tiny">Never share your pairing code with someone you do not trust.</p>
+  </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

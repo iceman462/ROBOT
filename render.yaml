@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: iceman-bot
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: OWNER_NUMBER
+        sync: false
+      - key: PREFIX
+        value: .
+      - key: BOT_NAME
+        value: ICEMAN BOT
+      - key: OWNER_NAME
+        value: ICEMAN
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: LOCAL_AI_URL
+        sync: false
