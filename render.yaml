@@ -3,7 +3,7 @@ services:
     name: iceman-bot
     env: node
     buildCommand: npm install
-    startCommand: npm start
+    startCommand: node index.js
     plan: free
     envVars:
       - key: NODE_VERSION
